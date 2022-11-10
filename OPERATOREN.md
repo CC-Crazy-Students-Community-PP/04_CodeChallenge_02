@@ -1,10 +1,13 @@
+```
 /***************************************************************/
 /************       Operatoren Erläuterungen       *************/
 /***************************************************************/
-/*
+```
+```yaml
     Hier als Beispiel wurde gezeigt, dass Variablen auch in einer Zeile deklariert werden können.
     Wie zB: let meinName = "Sandro", meinAlter = "geheim", meinZeug;
-
+```
+```
     Des weiteren gibt es hier eine liste von Operatoren die es in Javcascript gibt:
         ---------------------------------------------------------
         Arithmetic Operators (Arithmetische Operatoren):
@@ -151,4 +154,4 @@
             >>      right shift                 5 >> 1    (0101 >> 1)	    = 0010	dez= 2      verschiebt mit Vorzeichen nach rechts, indem Nullen von links hineingeschoben werden und die ganz rechts Bits abfallen
             >>>     unsigned right shift        5 >>> 1   (0101 >>> 1)	    = 0010	dez= 2      verschiebt ohne Vorzeichen nach rechts, indem Nullen von links hineingeschoben werden und die ganz rechts Bits abfallen
 
-*/
+```
