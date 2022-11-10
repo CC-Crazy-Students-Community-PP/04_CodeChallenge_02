@@ -1,21 +1,21 @@
-// /**********************************************************************/
-// /*********   CODE CHALLENGE 02  |  if else  |  switch case   **********/
-// /**********************************************************************/
+/**********************************************************************/
+/*********   CODE CHALLENGE 02  |  if else  |  switch case   **********/
+/**********************************************************************/
 
-// /*
-// Geben über eine Prompt-Anforderung einen Namen ein
-// Geben über eine Prompt-Anforderung ein Alter ein
+/*
+    Geben über eine Prompt-Anforderung einen Namen ein
+    Geben über eine Prompt-Anforderung ein Alter ein
 
-// Geben Sie in Abhängigkeit vom angegebenen Alter 
-// folgende Getränkeauswahl in die Konsole aus :
+    Geben Sie in Abhängigkeit vom angegebenen Alter 
+    folgende Getränkeauswahl in die Konsole aus :
 
-// Alter 0-5 // Milch  --> age > 0 AND age < 6
-// Alter 6-12 // Saft
-// Alter 13-17 // Cola
-// 18 + // Wein
+    Alter 0-5 // Milch  --> age > 0 AND age < 6
+    Alter 6-12 // Saft
+    Alter 13-17 // Cola
+    18 + // Wein
 
-// -->zB: "Max trinkt Cola."
-
+    -->zB: "Max trinkt Cola."
+*/
 
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 1    *************/
@@ -191,6 +191,10 @@
 
     console.log( personName8 + ", Du darfst mit " + personAge8 + " " + personDrink8 + " trinken!" );
 
+
+/***************************************************************/
+/************             Erläuterungen            *************/
+/***************************************************************/
 /*
     Hier als Beispiel wurde gezeigt, dass Variablen auch in eriner Zeile deklariert werden können.
     Wie zB: let meinName = "Sandro", meinAlter = "geheim", meinZeug;
@@ -213,10 +217,10 @@
             %   (Modulus / Remainder)       22 % 4              = 2                 die Division von zwei ganzen Zahlen ergeben einen Quotienten und einen Rest
                                             (22 / 4 = 20 also REst 2 zu 22)         das Ergebnis einer Modulo-Operation ist der Rest einer Division ()
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            ++  (Increment)                 let x = 5;          = y = 6             erhöht die Zahl immer um 1
+            ++  (Increment)                 let x = 5;          = y=6             erhöht die Zahl immer um 1
                                             let y = x++;                            geht nur mit Variablen, 5++ geht nicht
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            --  (Decrement)                 let x = 5;          = y = 4             vermindert die Zahl immer um 1
+            --  (Decrement)                 let x = 5;          = y=4             vermindert die Zahl immer um 1
                                             let y = x--;                            geht nur mit Variablen, 5-- geht nicht
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
             Reihenfolge: (Punkt vor Strich) Gruppieren mit ():
@@ -284,16 +288,50 @@
         ---------------------------------------------------------
         Comparison Operators (Vergleichs Operatoren):
         ---------------------------------------------------------
-            ==	    equal to                                    ( Wert == 1 )                                           vergleicht ob Wert exakt 1 ist
-            ===	    equal value and equal type                  ( Wert === 1 )                                          vergleicht ob Wert und Datentyp exakt gleich ist
-            !=	    not equal                                   ( Wert != 1 )                                           vergleicht ob Wert nicht 1 ist
-            !==	    not equal value or not equal type           ( Wert !== 1 )                                          vergleicht ob Wert und Datentyp nicht gleich ist
-            >	    greater than                                ( Wert > 1 )                                            vergleicht ob Wert größer ist als 1
-            <	    less than                                   ( Wert < 1 )                                            vergleicht ob Wert kleiner ist als 1
-            >=	    greater than or equal to                    ( Wert >= 1 )                                           vergleicht ob Wert exakt 1 oder größer ist als 1
-            <=	    less than or equal to                       ( Wert <= 1 )                                           vergleicht ob Wert exakt 1 oder kleiner ist als 1
-            ?	    ternary operator                            ( Wert = (condition) ? value1:value2 )                  vergleicht ob Wert condition erfüllt, dann value1, sonst value2
-
-
-
+            ==	    equal to                                    ( Wert == 1 )                                       vergleicht ob Wert exakt 1 ist
+            ===	    equal value and equal type                  ( Wert === 1 )                                      vergleicht ob Wert und Datentyp exakt gleich ist
+            !=	    not equal                                   ( Wert != 1 )                                       vergleicht ob Wert nicht 1 ist
+            !==	    not equal value or not equal type           ( Wert !== 1 )                                      vergleicht ob Wert und Datentyp nicht gleich ist
+            >	    greater than                                ( Wert > 1 )                                        vergleicht ob Wert größer ist als 1
+            <	    less than                                   ( Wert < 1 )                                        vergleicht ob Wert kleiner ist als 1
+            >=	    greater than or equal to                    ( Wert >= 1 )                                       vergleicht ob Wert exakt 1 oder größer ist als 1
+            <=	    less than or equal to                       ( Wert <= 1 )                                       vergleicht ob Wert exakt 1 oder kleiner ist als 1
+            ?	    ternary operator                            ( Wert = (condition) ? value1:value2 )              vergleicht ob Wert condition erfüllt, dann value1, sonst value2
+        ---------------------------------------------------------
+        Logical Operators (Logische Operatoren):    let x = 5; let y = 12
+        ---------------------------------------------------------
+            &&      logical and             (x < 10 && y > 10)              überprüft condition 1 UND 2, und nur wenn beide wahrheitsgemäß sind, ist es true
+                                            (x < 10 && y > 10) = true;      (x > 10 && y > 10) = false;     (x > 10 && y == 10) = false;
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            ||      logical or              (x == 5 || y == 5)              überprüft condition 1 ODER 2, wenn nur eine der beiden wahrheitsgemäß ist, ist es true
+                                            (x == 10 || y == 10) = false;   (x > 1 && y > 10) = true;       (x == 5 && y != 10) = true;
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            !       logical not             !(x == y)                       überprüft condition, und nur wenn sie fehlerhaft ist, ist es true
+                                            !(x == y) = true;               !(x > 10) = true;       !(x == 5 && y != 10) = false;
+        ---------------------------------------------------------
+        Type Operators (Typen Operatoren):
+        ---------------------------------------------------------
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Type Operator (Typen Operator)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+        	    typeof                          let x = typeof(5);          = number            gibt den Typ einer Variable wieder
+                instanceof                      (auto instanceof Car)       = true or false     gibt true zurück, wenn ein Objekt (auto) eine Instanz eines Objekttyps (Car) ist
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Number Methods (Nummer Methoden)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                Number()                        Number("11")                = 11                gibt eine Nummer / Zahl, konvertiert aus dem Argument, wieder
+                parseFloat()                    parseFloat("11,5")          = 11.5              analysiert eine Zeichenkette und gibt eine Fließkommazahl zurück
+                parseInt()                      parseInt("33")              = 33                analysiert eine Zeichenkette und gibt eine Ganzzahl zurück
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            String Methods (Zeichenketten Methoden)     let a = 3; 
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                toExponential()                 a.toExponential(2)          = 3.00e+0           gibt eine Zahl gerundet und in Exponentialschreibweise (2) geschrieben, als Zeichenkette wieder
+                toFixed()                       a.toFixed(2)                = 3.00              gibt eine Zahl gerundet und mit einer bestimmten Anzahl (2) von Nachkommastellen, als Zeichenkette wieder
+                toPrecision()                   a.toPrecision(5)            = 3.0000            gibt eine Zahl mit einer bestimmten Länge (5), als Zeichenkette wieder
+                toString()                      a.toString()                = 3                 gibt eine Zahl als Zeichenkette wieder
+                ValueOf()                       a.valueOf()                 = 3                 gibt den Inhalt einer Variable wieder
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Unary Operator (Unärer Operator)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                +                               let y = "5"; let x = + y;   = y=5               kann verwendet werden, um eine Variable in eine Zahl umzuwandeln
 */
