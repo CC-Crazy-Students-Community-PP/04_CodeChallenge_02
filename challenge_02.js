@@ -334,4 +334,15 @@
             Unary Operator (Unärer Operator)
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
                 +                               let y = "5"; let x = + y;   = y=5               kann verwendet werden, um eine Variable in eine Zahl umzuwandeln
+        ---------------------------------------------------------
+        Bitwise Operators (Bitweise Operatoren):
+        ---------------------------------------------------------
+            &       AND                         5 & 1     (0101 & 0001)	    = 0001	dez= 1      setzt jedes Bit auf 1, wenn beide Bits 1 sind
+            |       OR                          5 | 1     (0101 | 0001)	    = 0101	dez= 5      setzt jedes Bit auf 1, wenn eines der beiden Bits 1 ist
+            ^       XOR                         5 ^ 1     (0101 ^ 0001)	    = 0100	dez= 4      setzt jedes Bit auf 1, wenn nur eines der beiden Bits 1 ist
+            ~       NOT                         ~ 5       (~0101)           = 1010	dez= 10     invertiert alle Bits
+            <<      left shift                  5 << 1    (0101 << 1)	    = 1010	dez= 10     verschiebt nach links, indem Nullen von rechts hineingeschoben werden und die ganz linken Bits abfallen
+            >>      right shift                 5 >> 1    (0101 >> 1)	    = 0010	dez= 2      verschiebt mit Vorzeichen nach rechts, indem Nullen von links hineingeschoben werden und die ganz rechts Bits abfallen
+            >>>     unsigned right shift        5 >>> 1   (0101 >>> 1)	    = 0010	dez= 2      verschiebt ohne Vorzeichen nach rechts, indem Nullen von links hineingeschoben werden und die ganz rechts Bits abfallen
+
 */
