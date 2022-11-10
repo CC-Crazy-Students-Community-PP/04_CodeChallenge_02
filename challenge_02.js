@@ -1,4 +1,6 @@
-/*********   CODE CHALLENGE 02 **********/
+/**********************************************************************/
+/*********   CODE CHALLENGE 02  |  if else  |  switch case   **********/
+/**********************************************************************/
 
 /*
 Geben über eine Prompt-Anforderung einen Namen ein
@@ -16,3 +18,17 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+/***************************************************************/
+/************   Getränke-Challenge | Beispiel 1    *************/
+/***************************************************************/
+let firstName = prompt( "bitte gib Deinen Namen ein: " );
+let personAge = parseInt( prompt( "Bitt gib Dein Alter ein:" ) )
+
+switch (personAge) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
