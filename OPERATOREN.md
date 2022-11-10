@@ -14,7 +14,6 @@
         Arithmetic Operators (Arithmetische Operatoren):
         ---------------------------------------------------------
 ```
-
 >       +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
 >       -------------------------------------------------------------------------------------------------------------------------------------------------------------
 >       -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
@@ -41,14 +40,12 @@
 >       *   (Multiplication)            (1 + 100) * 5       = 505               addiert erst die Gruppe, dann wird multipliziert
 >       /   (Division)                  1 + 100 / 5         = 21                dividiert erst, dann wird addiert
 >       /   (Division)                  (1 + 100) / 5       = 20,2              addiert erst die Gruppe, dann wird dividiert
-
 ```css
         ---------------------------------------------------------
         Concatenation Operators (Verkettungs Operatoren):
         ---------------------------------------------------------
 ```
 >        +                               "test" + "string"   = "teststring"      kann auch Zeichenfolgen verketten, was eine andere Möglichkeit der Addition ist.
-
 ```css
         ---------------------------------------------------------
         Assignment Operators (Zuweisungs Operatoren):
@@ -102,7 +99,6 @@
 >       ??=             x ??= y    ist das selbe wie:       x = x ?? (x = y)    ordnet y x zu, wenn x nicht vorhanden ist = fügt ein fehlenden Eigenschaft zu einem Objekt hinzu
 >                           let user = {firstName:"Jane", lastName:"Doe"};        // output of user: firstName:"Jane", lastName:"Smith", nickName:"jdoe"
 >                           user.nickName ??= "jdoe";                             // fügt nickName zu user hinzu
-
 ```css
         ---------------------------------------------------------
         Comparison Operators (Vergleichs Operatoren):
@@ -117,20 +113,19 @@
 >       >=	    greater than or equal to                    ( Wert >= 1 )                                       vergleicht ob Wert exakt 1 oder größer ist als 1
 >       <=	    less than or equal to                       ( Wert <= 1 )                                       vergleicht ob Wert exakt 1 oder kleiner ist als 1
 >       ?	    ternary operator                            ( Wert = (condition) ? value1:value2 )              vergleicht ob Wert condition erfüllt, dann value1, sonst value2
-
 ```css
         ---------------------------------------------------------
         Logical Operators (Logische Operatoren):    let x = 5; let y = 12
         ---------------------------------------------------------
 ```
-       &&      logical and              (x < 10 && y > 10)              überprüft condition 1 UND 2, und nur wenn beide wahrheitsgemäß sind, ist es true
-                                        (x < 10 && y > 10) = true;      (x > 10 && y > 10) = false;     (x > 10 && y == 10) = false;
-       -------------------------------------------------------------------------------------------------------------------------------------------------------------
-       ||      logical or               (x == 5 || y == 5)              überprüft condition 1 ODER 2, wenn nur eine der beiden wahrheitsgemäß ist, ist es true
-                                        (x == 10 || y == 10) = false;   (x > 1 && y > 10) = true;       (x == 5 && y != 10) = true;
-       -------------------------------------------------------------------------------------------------------------------------------------------------------------
-       !       logical not              !(x == y)                       überprüft condition, und nur wenn sie fehlerhaft ist, ist es true
-                                        !(x == y) = true;               !(x > 10) = true;       !(x == 5 && y != 10) = false;
+>       &&      logical and              (x < 10 && y > 10)              überprüft condition 1 UND 2, und nur wenn beide wahrheitsgemäß sind, ist es true
+>                                        (x < 10 && y > 10) = true;      (x > 10 && y > 10) = false;     (x > 10 && y == 10) = false;
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       ||      logical or               (x == 5 || y == 5)              überprüft condition 1 ODER 2, wenn nur eine der beiden wahrheitsgemäß ist, ist es true
+>                                        (x == 10 || y == 10) = false;   (x > 1 && y > 10) = true;       (x == 5 && y != 10) = true;
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       !       logical not              !(x == y)                       überprüft condition, und nur wenn sie fehlerhaft ist, ist es true
+>                                        !(x == y) = true;               !(x > 10) = true;       !(x == 5 && y != 10) = false;
 ```css
         ---------------------------------------------------------
         Type Operators (Typen Operatoren):
