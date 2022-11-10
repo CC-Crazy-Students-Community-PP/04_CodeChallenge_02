@@ -1,4 +1,4 @@
-```
+```m
 /***************************************************************/
 /************       Operatoren Erläuterungen       *************/
 /***************************************************************/
@@ -16,15 +16,18 @@
 ```
 
 >            +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
+
 >            -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
+
 >            *   (Multiplication)            5 * 5               = 25                multipliziert eine Zahl mit einer anderen
+
 >            /   (Division)                  5 / 5               = 1                 dividiert eine Zahl mit einer anderen
+
 >            **  (Exponentiation (ES2016))   10 ** 2             = 100               hebt den ersten Operanden auf die Potenz des zweiten Operanden an
 >                                            (10 potenz 2 = 10 hoch 2 also 10 * 10 = 100)
 
-            %   (Modulus / Remainder)       22 % 4              = 2                 die Division von zwei ganzen Zahlen ergeben einen Quotienten und einen Rest
-                                            (22 / 4 = 20 also REst 2 zu 22)         das Ergebnis einer Modulo-Operation ist der Rest einer Division ()
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>            %   (Modulus / Remainder)       22 % 4              = 2                 die Division von zwei ganzen Zahlen ergeben einen Quotienten und einen Rest
+>                                            (22 / 4 = 20 also REst 2 zu 22)         das Ergebnis einer Modulo-Operation ist der Rest einer Division ()
             ++  (Increment)                 let x = 5;          = y=6             erhöht die Zahl immer um 1
                                             let y = x++;                            geht nur mit Variablen, 5++ geht nicht
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
