@@ -12,6 +12,6 @@
 *  * Alter 13-17 // Cola
 *  * 18 + // Wein
 
-* output zB: "Max trinkt Cola."
+* output zB: "Max trinkt Cola"
 
 ###### sandrosimperl.cc@gmail.com
