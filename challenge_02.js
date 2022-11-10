@@ -22,32 +22,34 @@ Alter 13-17 // Cola
     const checkAge = true;
     // let personName = prompt( "bitte gib Deinen Namen ein: " );
     // let personAge = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
-    let personName = "Sandro";
-    let personAge = 42;
+
 
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 1    *************/
 /***************************************************************/
-    let isBaby = ( personAge >= 0 && personAge <= 5 ) ? true : false;
-    let isKid = ( personAge >= 6 && personAge <= 12 ) ? true : false;
-    let isTeen = ( personAge >= 13 && personAge <= 17 ) ? true : false;
-    let isAdault = ( personAge > 18 ) ? true : false;
+    let personName1 = "Sandro";
+    let personAge1 = 42;
+
+    let isBaby = ( personAge1 >= 0 && personAge1 <= 5 ) ? true : false;
+    let isKid = ( personAge1 >= 6 && personAge1 <= 12 ) ? true : false;
+    let isTeen = ( personAge1 >= 13 && personAge1 <= 17 ) ? true : false;
+    let isAdault = ( personAge1 > 18 ) ? true : false;
 
     switch (checkAge) {
         case isBaby:
-            console.log( personName + ", Du darfst mit " + personAge + " nur Milch trinken!" );
+            console.log( personName1 + ", Du darfst mit " + personAge1 + " nur Milch trinken!" );
             break;
         case isKid:
-            console.log( personName + ", Du darfst mit " + personAge + " Saft trinken!" );
+            console.log( personName1 + ", Du darfst mit " + personAge1 + " Saft trinken!" );
             break;
         case isTeen:
-            console.log( personName + ", Du darfst mit " + personAge + " schon Cola trinken!" );
+            console.log( personName1 + ", Du darfst mit " + personAge1 + " schon Cola trinken!" );
             break;
         case isAdault:
-            console.log( personName + ", Du darfst mit " + personAge + " auch Wein trinken!" );
+            console.log( personName1 + ", Du darfst mit " + personAge1 + " auch Wein trinken!" );
             break;
         default:
-            console.log( personName + ", Du hast kein richtiges Alter eingegeben und darfst daher gar nichts trinken!" );
+            console.log( personName1 + ", Du hast kein richtiges Alter eingegeben und darfst daher gar nichts trinken!" );
             break;
     }
 
@@ -66,3 +68,8 @@ Alter 13-17 // Cola
     } else {
         console.log( personName + ", Du hast kein richtiges Alter eingegeben und darfst daher gar nichts trinken!" );
     }
+
+
+/***************************************************************/
+/************   Getränke-Challenge | Beispiel 3    *************/
+/***************************************************************/
