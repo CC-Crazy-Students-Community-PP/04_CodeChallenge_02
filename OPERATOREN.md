@@ -9,10 +9,12 @@
         let meinName = "Sandro", meinAlter = "geheim", meinZeug;
 ```
 >Des weiteren gibt es hier eine liste von Operatoren die es in Javcascript gibt:
-```
+```cs
         ---------------------------------------------------------
         Arithmetic Operators (Arithmetische Operatoren):
         ---------------------------------------------------------
+```
+>>>
             +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
             -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
