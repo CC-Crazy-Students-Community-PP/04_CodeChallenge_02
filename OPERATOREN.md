@@ -15,36 +15,38 @@
         ---------------------------------------------------------
 ```
 
->            +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            *   (Multiplication)            5 * 5               = 25                multipliziert eine Zahl mit einer anderen
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            /   (Division)                  5 / 5               = 1                 dividiert eine Zahl mit einer anderen
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            **  (Exponentiation (ES2016))   10 ** 2             = 100               hebt den ersten Operanden auf die Potenz des zweiten Operanden an
->                                            (10 potenz 2 = 10 hoch 2 also 10 * 10 = 100)
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            %   (Modulus / Remainder)       22 % 4              = 2                 die Division von zwei ganzen Zahlen ergeben einen Quotienten und einen Rest
->                                            (22 / 4 = 20 also REst 2 zu 22)         das Ergebnis einer Modulo-Operation ist der Rest einer Division ()
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            ++  (Increment)                 let x = 5;          = y=6             erhöht die Zahl immer um 1
->                                            let y = x++;                            geht nur mit Variablen, 5++ geht nicht
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->            --  (Decrement)                 let x = 5;          = y=4             vermindert die Zahl immer um 1
->                                            let y = x--;                            geht nur mit Variablen, 5-- geht nicht
->            -------------------------------------------------------------------------------------------------------------------------------------------------------------
->>            Reihenfolge: (Punkt vor Strich) Gruppieren mit ():
->>            *   (Multiplication)            1 + 100 * 5         = 501               multipliziert erst, dann wird addiert
->>            *   (Multiplication)            (1 + 100) * 5       = 505               addiert erst die Gruppe, dann wird multipliziert
->>            /   (Division)                  1 + 100 / 5         = 21                dividiert erst, dann wird addiert
->>            /   (Division)                  (1 + 100) / 5       = 20,2              addiert erst die Gruppe, dann wird dividiert
+>       +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       *   (Multiplication)            5 * 5               = 25                multipliziert eine Zahl mit einer anderen
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       /   (Division)                  5 / 5               = 1                 dividiert eine Zahl mit einer anderen
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       **  (Exponentiation (ES2016))   10 ** 2             = 100               hebt den ersten Operanden auf die Potenz des zweiten Operanden an
+>                                       (10 potenz 2 = 10 hoch 2 also 10 * 10 = 100)
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       %   (Modulus / Remainder)       22 % 4              = 2                 die Division von zwei ganzen Zahlen ergeben einen Quotienten und einen Rest
+>                                       (22 / 4 = 20 also REst 2 zu 22)         das Ergebnis einer Modulo-Operation ist der Rest einer Division ()
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       ++  (Increment)                 let x = 5;          = y=6               erhöht die Zahl immer um 1
+>                                       let y = x++;                            geht nur mit Variablen, 5++ geht nicht
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       --  (Decrement)                 let x = 5;          = y=4               vermindert die Zahl immer um 1
+>                                       let y = x--;                            geht nur mit Variablen, 5-- geht nicht
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>       Reihenfolge: (Punkt vor Strich) Gruppieren mit ():
+>>       *   (Multiplication)            1 + 100 * 5         = 501               multipliziert erst, dann wird addiert
+>>       *   (Multiplication)            (1 + 100) * 5       = 505               addiert erst die Gruppe, dann wird multipliziert
+>>       /   (Division)                  1 + 100 / 5         = 21                dividiert erst, dann wird addiert
+>>       /   (Division)                  (1 + 100) / 5       = 20,2              addiert erst die Gruppe, dann wird dividiert
 
+```css
         ---------------------------------------------------------
         Concatenation Operators (Verkettungs Operatoren):
         ---------------------------------------------------------
-            +                               "test" + "string"   = "teststring"      kann auch Zeichenfolgen verketten, was eine andere Möglichkeit der Addition ist.
+```
+>        +                               "test" + "string"   = "teststring"      kann auch Zeichenfolgen verketten, was eine andere Möglichkeit der Addition ist.
 
         ---------------------------------------------------------
         Assignment Operators (Zuweisungs Operatoren):
