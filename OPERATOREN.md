@@ -34,12 +34,13 @@
 >       -------------------------------------------------------------------------------------------------------------------------------------------------------------
 >       --  (Decrement)                 let x = 5;          = y=4               vermindert die Zahl immer um 1
 >                                       let y = x--;                            geht nur mit Variablen, 5-- geht nicht
+
+>       Reihenfolge: (Punkt vor Strich) Gruppieren mit ():
 >       -------------------------------------------------------------------------------------------------------------------------------------------------------------
->>       Reihenfolge: (Punkt vor Strich) Gruppieren mit ():
->>       *   (Multiplication)            1 + 100 * 5         = 501               multipliziert erst, dann wird addiert
->>       *   (Multiplication)            (1 + 100) * 5       = 505               addiert erst die Gruppe, dann wird multipliziert
->>       /   (Division)                  1 + 100 / 5         = 21                dividiert erst, dann wird addiert
->>       /   (Division)                  (1 + 100) / 5       = 20,2              addiert erst die Gruppe, dann wird dividiert
+>       *   (Multiplication)            1 + 100 * 5         = 501               multipliziert erst, dann wird addiert
+>       *   (Multiplication)            (1 + 100) * 5       = 505               addiert erst die Gruppe, dann wird multipliziert
+>       /   (Division)                  1 + 100 / 5         = 21                dividiert erst, dann wird addiert
+>       /   (Division)                  (1 + 100) / 5       = 20,2              addiert erst die Gruppe, dann wird dividiert
 
 ```css
         ---------------------------------------------------------
@@ -48,46 +49,48 @@
 ```
 >        +                               "test" + "string"   = "teststring"      kann auch Zeichenfolgen verketten, was eine andere Möglichkeit der Addition ist.
 
+```css
         ---------------------------------------------------------
         Assignment Operators (Zuweisungs Operatoren):
         ---------------------------------------------------------
-            Standart Assignment Operators
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                =               var = 1                                                 
-                =               x = y       ist das selbe wie:      x = y               weist einer Variable einen Wert zu
-                +=              x += y      ist das selbe wie:      x = x + y           weist einer Variable einen Wert mit sich selbst addiert zu
-                -=              x -= y      ist das selbe wie:      x = x - y           weist einer Variable einen Wert mit sich selbst subtrahiert zu
-                *=              x *= y      ist das selbe wie:      x = x * y           weist einer Variable einen Wert mit sich selbst multipliziert zu
-                /=              x /= y      ist das selbe wie:      x = x / y           weist einer Variable einen Wert mit sich selbst dividiert zu
-                %=              x %= y      ist das selbe wie:      x = x % y           weist einer Variable einen Wert mit sich selbst als Rest aus der Division zu
-                **=             x **= y     ist das selbe wie:      x = x ** y          weist einer Variable einen Wert mit sich selbst als Potenz zu
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            Shift Assignment Operators (Verschiebungs Operatoren)
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                <<=	            x <<= y     ist das selbe wie:      x = x << y          Linksverschiebung verschiebt die angegebene Anzahl von Bits nach links und weist das Ergebnis der Variablen zu
-                                        let a = 5;  // 00000101                             a <<= 2; // 00010100                                // output of a: 20
-                                        let b = -5; // 11111111111111111111111111111011     b >>= 2; // 11111111111111111111111111111110        // output of b: -2
-                -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                >>=	            x >>= y     ist das selbe wie:      x = x >> y          Rechtsverschiebung verschiebt die angegebene Anzahl von Bits nach rechts und weist das Ergebnis der Variablen zu
-                                        let a = 5; // 00000101                              a >>= 2; // 00000001                                // output of a: 1
-                -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                >>>=	        x >>>= y    ist das selbe wie:      x = x >>> y         vorzeichenloser Rechtsschiebesoperator verschiebt die angegebene Anzahl von Bits nach rechts und weist das Ergebnis der Variablen zu.
-                                        let a = 5;  // 00000101                             a >>>= 2; // 00010100                                // output of a: 20
-                                        let b = -5; // -00000000000000000000000000000101    b >>>= 2; // 00111111111111111111111111111110        // output of b: 1073741822
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            Bitwise Assignment Operators (bitweise Zuweisungsoperator)
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                &=	            x &= y    ist das selbe wie:        x = x & y           bitweise UND führt eine bitweise UND-Verknüpfung beider binären Zahlen durch und weist das Ergebnis der Variablen zu
-                                        let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000001         // output of a: 1
-                -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                ^=	            x ^= y    ist das selbe wie:        x = x ^ y           bitweise XOR führt eine bitweise XOR-Operation beider binären Zahlen durch und weist das Ergebnis der Variablen zu.
-                                        let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000110         // output of a: 6
-                -------------------------------------------------------------------------------------------------------------------------------------------------------------
-                |=	            x |= y    ist das selbe wie:        x = x | y           bitweise ODER führt eine bitweise ODER-Operation beider binären Zahlen durch und weist das Ergebnis der Variablen zu.
-                                        let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000111         // output of a: 7
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            Logical Assignment Operators (Logische Zuweisungsoperatoren)
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+>       Standart Assignment Operators
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       =               var = 1                                                 
+>       =               x = y       ist das selbe wie:      x = y               weist einer Variable einen Wert zu
+>       +=              x += y      ist das selbe wie:      x = x + y           weist einer Variable einen Wert mit sich selbst addiert zu
+>       -=              x -= y      ist das selbe wie:      x = x - y           weist einer Variable einen Wert mit sich selbst subtrahiert zu
+>       *=              x *= y      ist das selbe wie:      x = x * y           weist einer Variable einen Wert mit sich selbst multipliziert zu
+>       /=              x /= y      ist das selbe wie:      x = x / y           weist einer Variable einen Wert mit sich selbst dividiert zu
+>       %=              x %= y      ist das selbe wie:      x = x % y           weist einer Variable einen Wert mit sich selbst als Rest aus der Division zu
+>       **=             x **= y     ist das selbe wie:      x = x ** y          weist einer Variable einen Wert mit sich selbst als Potenz zu
+
+>       Shift Assignment Operators (Verschiebungs Operatoren)
+>       -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       <<=	            x <<= y     ist das selbe wie:      x = x << y          Linksverschiebung verschiebt die angegebene Anzahl von Bits nach links und weist das Ergebnis der Variablen zu
+>                                let a = 5;  // 00000101                             a <<= 2; // 00010100                                // output of a: 20
+>                                let b = -5; // 11111111111111111111111111111011     b >>= 2; // 11111111111111111111111111111110        // output of b: -2
+>                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>       >>=	            x >>= y     ist das selbe wie:      x = x >> y          Rechtsverschiebung verschiebt die angegebene Anzahl von Bits nach rechts und weist das Ergebnis der Variablen zu
+>                                let a = 5; // 00000101                              a >>= 2; // 00000001                                // output of a: 1
+>                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>                >>>=	        x >>>= y    ist das selbe wie:      x = x >>> y         vorzeichenloser Rechtsschiebesoperator verschiebt die angegebene Anzahl von Bits nach rechts und weist das Ergebnis der Variablen zu.
+>                                let a = 5;  // 00000101                             a >>>= 2; // 00010100                                // output of a: 20
+>                                let b = -5; // -00000000000000000000000000000101    b >>>= 2; // 00111111111111111111111111111110        // output of b: 1073741822
+
+>            Bitwise Assignment Operators (bitweise Zuweisungsoperator)
+>            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>                &=	            x &= y    ist das selbe wie:        x = x & y           bitweise UND führt eine bitweise UND-Verknüpfung beider binären Zahlen durch und weist das Ergebnis der Variablen zu
+>                                let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000001         // output of a: 1
+>            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>            ^=	            x ^= y    ist das selbe wie:        x = x ^ y           bitweise XOR führt eine bitweise XOR-Operation beider binären Zahlen durch und weist das Ergebnis der Variablen zu.
+>                                let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000110         // output of a: 6
+>            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>            |=	            x |= y    ist das selbe wie:        x = x | y           bitweise ODER führt eine bitweise ODER-Operation beider binären Zahlen durch und weist das Ergebnis der Variablen zu.
+>                                let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000111         // output of a: 7
+
+>            Logical Assignment Operators (Logische Zuweisungsoperatoren)
+>            -------------------------------------------------------------------------------------------------------------------------------------------------------------
                 &&=             x &&= y    ist das selbe wie:       x = x && (x = y)    ordnet y x zu, wenn x wahrheitsgemäß ist = wenn x vergeben ist output y ansonsten x
                                        let person = {firstName:"Jane", lastName:"Doe"};         // output of person: firstName:"Jane", lastName:"Smith"
                                        person.lastName &&= "Smith";                             // überschreibt lasName mit Smith
