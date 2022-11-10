@@ -2,7 +2,7 @@
 /************             Erläuterungen            *************/
 /***************************************************************/
 /*
-    Hier als Beispiel wurde gezeigt, dass Variablen auch in eriner Zeile deklariert werden können.
+    Hier als Beispiel wurde gezeigt, dass Variablen auch in einer Zeile deklariert werden können.
     Wie zB: let meinName = "Sandro", meinAlter = "geheim", meinZeug;
 */
 /*
