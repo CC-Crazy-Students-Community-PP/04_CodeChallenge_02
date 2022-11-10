@@ -1,26 +1,20 @@
-/**********************************************************************/
-/*********   CODE CHALLENGE 02  |  if else  |  switch case   **********/
-/**********************************************************************/
+// /**********************************************************************/
+// /*********   CODE CHALLENGE 02  |  if else  |  switch case   **********/
+// /**********************************************************************/
 
-/*
-Geben über eine Prompt-Anforderung einen Namen ein
-Geben über eine Prompt-Anforderung ein Alter ein
+// /*
+// Geben über eine Prompt-Anforderung einen Namen ein
+// Geben über eine Prompt-Anforderung ein Alter ein
 
-Geben Sie in Abhängigkeit vom angegebenen Alter 
-folgende Getränkeauswahl in die Konsole aus :
+// Geben Sie in Abhängigkeit vom angegebenen Alter 
+// folgende Getränkeauswahl in die Konsole aus :
 
-Alter 0-5 // Milch  --> age > 0 AND age < 6
-Alter 6-12 // Saft
-Alter 13-17 // Cola
-18 + // Wein
+// Alter 0-5 // Milch  --> age > 0 AND age < 6
+// Alter 6-12 // Saft
+// Alter 13-17 // Cola
+// 18 + // Wein
 
--->zB: "Max trinkt Cola."
-
-/***************************************************************/
-/************      Vorgaben für alle Beispiele     *************/
-/***************************************************************/
-    // let personName = prompt( "bitte gib Deinen Namen ein: " );
-    // let personAge = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+// -->zB: "Max trinkt Cola."
 
 
 /***************************************************************/
@@ -28,10 +22,10 @@ Alter 13-17 // Cola
 /***************************************************************/
     const checkAge = true;
 
-    let personName1 = "Sandro";
-    let personAge1 = 42;
+    let personName1 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge1 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
 
-    let isBaby = ( personAge1 >= 0 && personAge1 <= 6 ) ? true : false;
+    let isBaby = ( personAge1 >= 0 && personAge1 <= 5 ) ? true : false;
     let isKid = ( personAge1 >= 6 && personAge1 <= 12 ) ? true : false;
     let isTeen = ( personAge1 >= 13 && personAge1 <= 17 ) ? true : false;
     let isAdault = ( personAge1 > 18 ) ? true : false;
@@ -58,62 +52,141 @@ Alter 13-17 // Cola
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 2    *************/
 /***************************************************************/
-    let personName3 = "Sandro";
-    let personAge3 = 3;
+    let personName2 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge2 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
 
-    switch (true) {
-        case 0: case 1: case 2: case 3: case 4: case 5: case 6:
-            console.log( personName3 + ", Du darfst mit " + personAge3 + " nur Milch trinken!" );
+    switch ( true ) {
+        case ( personAge2 >= 0, personAge2 <= 5 ):
+            console.log( personName2 + ", Du darfst mit " + personAge2 + " nur Milch trinken!" );
             break;
-        case 7: case 8: case 9: case 10: case 11: case 12:
-            console.log( personName3 + ", Du darfst mit " + personAge3 + " schon Cola trinken!" );
+        case ( personAge2 >= 6, personAge2 <= 12 ):
+            console.log( personName2 + ", Du darfst mit " + personAge2 + " Saft trinken!" );
             break;
-        case 13:
-        case 14:
-        case 15:
-        case 16:
-        case 17:
-            console.log( personName3 + ", Du darfst mit " + personAge3 + " nur Milch trinken!" );
+        case ( personAge2 >= 13, personAge2 <= 17 ):
+            console.log( personName2 + ", Du darfst mit " + personAge2 + " schon Cola trinken!" );
+            break;
+        case ( personAge2 >= 18 ):
+            console.log( personName2 + ", Du darfst mit " + personAge2 + " auch Wein trinken!" );
             break;
         default:
-            console.log( personName3 + ", Du darfst mit " + personAge3 + " sogar Wein trinken!" );
+            console.log( personName2 + ", Du darfst gar nichts trinken!" );
             break;
     }
+
 
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 3    *************/
 /***************************************************************/
-let personName4 = "Sandro";
-let personAge4 = 6;
+    let personName3 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge3 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+    let personDrink3;
 
-switch (personAge4) {
-    case (personAge4 > 0 , personAge4 < 6):
-        console.log( personName4 + ", Du darfst mit " + personAge4 + " nur Milch trinken!" );
-        break;
-    case (personAge4 > 6 , personAge4 < 12):
-        console.log( personName4 + ", Du darfst mit " + personAge4 + " nur Milch trinken!" );
-        break;
-    default:
-        console.log( personName4 + ", Du darfst nichts trinken!" );
-        break;
-}
+    switch ( true ) {
+        case ( personAge3 >= 0 && personAge3 <= 5 ):
+            personDrink3 = "nur Milch";
+            break;
+        case ( personAge3 >= 6 && personAge3 <= 12 ):
+            personDrink3 = "Saft";
+            break;
+        case ( personAge3 >= 13 && personAge3 <= 18 ):
+            personDrink3 = "schon Cola";
+            break;
+        default:
+            personDrink3 = "auch Wein";
+            break;
+    }
+
+    console.log( personName3 + ", Du darfst mit " + personAge3 + " " + personDrink3 + " trinken!" );
 
 
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 4    *************/
 /***************************************************************/
-let personName2 = "Sandro";
-let personAge2 = 42;
+    let personName4 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge4 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+    let personDrink4;
 
-if ( personAge2 >= 0 && personAge2 <= 6 ) {
-    console.log( personName2 + ", Du darfst mit " + personAge2 + " nur Milch trinken!" );
-} else if ( personAge2 >= 6 && personAge2 <= 12 ) {
-    console.log( personName2 + ", Du darfst mit " + personAge2 + " Saft trinken!" );
-} else if ( personAge2 >= 13 && personAge2 <= 17 ) {
-    console.log( personName2 + ", Du darfst mit " + personAge2 + " schon Cola trinken!" );
-} else if ( personAge2 > 18 ) {
-    console.log( personName2 + ", Du darfst mit " + personAge2 + " auch Wein trinken!" );
-} else {
-    console.log( personName2 + ", Du hast kein richtiges Alter eingegeben und darfst daher gar nichts trinken!" );
-}
+    switch ( true ) {
+        case ( personAge4 > 0 && personAge4 < 6 ):
+            personDrink4 = "nur Milch";
+            break;
+        case ( personAge4 > 5 && personAge4 <= 13 ):
+            personDrink4 = "Saft";
+            break;
+        case ( personAge4 > 12 && personAge4 < 19 ):
+            personDrink4 = "schon Cola";
+            break;
+        default:
+            personDrink4 = "auch Wein";
+            break;
+    }
 
+    console.log( personName4 + ", Du darfst mit " + personAge4 + " " + personDrink4 + " trinken!" );
+
+/***************************************************************/
+/************   Getränke-Challenge | Beispiel 5    *************/
+/***************************************************************/
+    let personName5 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge5 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+
+    if ( personAge5 >= 0 && personAge5 <= 5 ) {
+        console.log( personName5 + ", Du darfst mit " + personAge5 + " nur Milch trinken!" );
+    } else if ( personAge5 >= 6 && personAge5 <= 12 ) {
+        console.log( personName5 + ", Du darfst mit " + personAge5 + " Saft trinken!" );
+    } else if ( personAge5 >= 13 && personAge5 <= 17 ) {
+        console.log( personName5 + ", Du darfst mit " + personAge5 + " schon Cola trinken!" );
+    } else if ( personAge5 > 18 ) {
+        console.log( personName5 + ", Du darfst mit " + personAge5 + " auch Wein trinken!" );
+    } else {
+        console.log( personName5 + ", Du hast kein richtiges Alter eingegeben und darfst daher gar nichts trinken!" );
+    }
+
+
+/***************************************************************/
+/************   Getränke-Challenge | Beispiel 6    *************/
+/***************************************************************/
+    let personName6 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge6 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+
+    let personDrink6;
+
+
+    if ( personAge6 > 0, personAge6 < 6 ) {
+        personDrink6 = "nur Milch";
+    } else if ( personAge6 > 5 && personAge6 < 13 ) {
+        personDrink6 = "Saft";
+    } else if ( personAge6 > 12 && personAge6 < 18 ) {
+        personDrink6 = "schon Cola";
+    } else {
+        personDrink6 = "auch Wein";
+    }
+
+    console.log( personName6 + ", Du darfst mit " + personAge6 + " " + personDrink6 + " trinken!" );
+
+
+/***************************************************************/
+/************   Getränke-Challenge | Beispiel 7    *************/
+/***************************************************************/
+    let personName7 = prompt( "bitte gib Deinen Namen ein: " );
+    let personAge7 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+    let personDrink7;
+
+    ( personAge7 >= 0, personAge7 <= 5 ) ? personDrink7 = "nur Milch" : 
+        ( personAge7 >= 6 && personAge7 <= 12 ) ? personDrink7 = "Saft" : 
+            ( personAge7 >= 13 && personAge7 <= 18 ) ? personDrink7 = "schon Cola" : personDrink7 = "auch Wein";
+
+    console.log( personName7 + ", Du darfst mit " + personAge7 + " " + personDrink7 + " trinken!" );
+
+
+/***************************************************************/
+/************   Getränke-Challenge | Beispiel 8    *************/
+/***************************************************************/
+    let personName8 = prompt( "bitte gib Deinen Namen ein: " ), personAge8 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) ), personDrink8;
+
+    if ( personAge8 >= 0, personAge8 <= 5 ) { personDrink8 = "nur Milch"; }
+    if ( personAge8 >= 6, personAge8 <= 12 ) { personDrink8 = "Saft"; }
+    if ( personAge8 >= 13, personAge8 <= 18 ) { personDrink8 = "schon Cola"; }
+    if ( personAge8 > 18 ) { personDrink8 = "auch Wein"; }
+    if ( !(personAge8 >= 0) && !(personAge8 > 18 ) ) { personDrink8 = "gar nichts"; }
+
+    console.log( personName8 + ", Du darfst mit " + personAge8 + " " + personDrink8 + " trinken!" );
