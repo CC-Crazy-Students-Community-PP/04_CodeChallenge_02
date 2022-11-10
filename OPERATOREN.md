@@ -15,13 +15,13 @@
         ---------------------------------------------------------
 ```
 
-            +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
->>>            -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
+>            +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            *   (Multiplication)            5 * 5               = 25                multipliziert eine Zahl mit einer anderen
+>            -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            /   (Division)                  5 / 5               = 1                 dividiert eine Zahl mit einer anderen
+>            *   (Multiplication)            5 * 5               = 25                multipliziert eine Zahl mit einer anderen
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+>            /   (Division)                  5 / 5               = 1                 dividiert eine Zahl mit einer anderen
             -------------------------------------------------------------------------------------------------------------------------------------------------------------
             **  (Exponentiation (ES2016))   10 ** 2             = 100               hebt den ersten Operanden auf die Potenz des zweiten Operanden an
                                             (10 potenz 2 = 10 hoch 2 also 10 * 10 = 100)
