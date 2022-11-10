@@ -190,3 +190,110 @@
     if ( !(personAge8 >= 0) && !(personAge8 > 18 ) ) { personDrink8 = "gar nichts"; }
 
     console.log( personName8 + ", Du darfst mit " + personAge8 + " " + personDrink8 + " trinken!" );
+
+/*
+    Hier als Beispiel wurde gezeigt, dass Variablen auch in eriner Zeile deklariert werden können.
+    Wie zB: let meinName = "Sandro", meinAlter = "geheim", meinZeug;
+
+    Des weiteren gibt es hier eine liste von Operatoren die es in Javcascript gibt:
+        ---------------------------------------------------------
+        Arithmetic Operators (Arithmetische Operatoren):
+        ---------------------------------------------------------
+            +   (Addition)                  5 + 5               = 10                addiert eine Zahl mit einer anderen
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            -   (Subtraction)               5 - 2               = 3                 subtrahiert eine Zahl mit einer anderen
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            *   (Multiplication)            5 * 5               = 25                multipliziert eine Zahl mit einer anderen
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            /   (Division)                  5 / 5               = 1                 dividiert eine Zahl mit einer anderen
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            **  (Exponentiation (ES2016))   10 ** 2             = 100               hebt den ersten Operanden auf die Potenz des zweiten Operanden an
+                                            (10 potenz 2 = 10 hoch 2 also 10 * 10 = 100)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            %   (Modulus / Remainder)       22 % 4              = 2                 die Division von zwei ganzen Zahlen ergeben einen Quotienten und einen Rest
+                                            (22 / 4 = 20 also REst 2 zu 22)         das Ergebnis einer Modulo-Operation ist der Rest einer Division ()
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            ++  (Increment)                 let x = 5;          = y = 6             erhöht die Zahl immer um 1
+                                            let y = x++;                            geht nur mit Variablen, 5++ geht nicht
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            --  (Decrement)                 let x = 5;          = y = 4             vermindert die Zahl immer um 1
+                                            let y = x--;                            geht nur mit Variablen, 5-- geht nicht
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Reihenfolge: (Punkt vor Strich) Gruppieren mit ():
+            *   (Multiplication)            1 + 100 * 5         = 501               multipliziert erst, dann wird addiert
+            *   (Multiplication)            (1 + 100) * 5       = 505               addiert erst die Gruppe, dann wird multipliziert
+            /   (Division)                  1 + 100 / 5         = 21                dividiert erst, dann wird addiert
+            /   (Division)                  (1 + 100) / 5       = 20,2              addiert erst die Gruppe, dann wird dividiert
+
+        ---------------------------------------------------------
+        Concatenation Operators (Verkettungs Operatoren):
+        ---------------------------------------------------------
+            +                               "test" + "string"   = "teststring"      kann auch Zeichenfolgen verketten, was eine andere Möglichkeit der Addition ist.
+
+        ---------------------------------------------------------
+        Assignment Operators (Zuweisungs Operatoren):
+        ---------------------------------------------------------
+            Standart Assignment Operators
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                =               var = 1                                                 
+                =               x = y       ist das selbe wie:      x = y               weist einer Variable einen Wert zu
+                +=              x += y      ist das selbe wie:      x = x + y           weist einer Variable einen Wert mit sich selbst addiert zu
+                -=              x -= y      ist das selbe wie:      x = x - y           weist einer Variable einen Wert mit sich selbst subtrahiert zu
+                *=              x *= y      ist das selbe wie:      x = x * y           weist einer Variable einen Wert mit sich selbst multipliziert zu
+                /=              x /= y      ist das selbe wie:      x = x / y           weist einer Variable einen Wert mit sich selbst dividiert zu
+                %=              x %= y      ist das selbe wie:      x = x % y           weist einer Variable einen Wert mit sich selbst als Rest aus der Division zu
+                **=             x **= y     ist das selbe wie:      x = x ** y          weist einer Variable einen Wert mit sich selbst als Potenz zu
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Shift Assignment Operators (Verschiebungs Operatoren)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                <<=	            x <<= y     ist das selbe wie:      x = x << y          Linksverschiebung verschiebt die angegebene Anzahl von Bits nach links und weist das Ergebnis der Variablen zu
+                                        let a = 5;  // 00000101                             a <<= 2; // 00010100                                // output of a: 20
+                                        let b = -5; // 11111111111111111111111111111011     b >>= 2; // 11111111111111111111111111111110        // output of b: -2
+                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                >>=	            x >>= y     ist das selbe wie:      x = x >> y          Rechtsverschiebung verschiebt die angegebene Anzahl von Bits nach rechts und weist das Ergebnis der Variablen zu
+                                        let a = 5; // 00000101                              a >>= 2; // 00000001                                // output of a: 1
+                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                >>>=	        x >>>= y    ist das selbe wie:      x = x >>> y         vorzeichenloser Rechtsschiebesoperator verschiebt die angegebene Anzahl von Bits nach rechts und weist das Ergebnis der Variablen zu.
+                                        let a = 5;  // 00000101                             a >>>= 2; // 00010100                                // output of a: 20
+                                        let b = -5; // -00000000000000000000000000000101    b >>>= 2; // 00111111111111111111111111111110        // output of b: 1073741822
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Bitwise Assignment Operators (bitweise Zuweisungsoperator)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                &=	            x &= y    ist das selbe wie:        x = x & y           bitweise UND führt eine bitweise UND-Verknüpfung beider binären Zahlen durch und weist das Ergebnis der Variablen zu
+                                        let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000001         // output of a: 1
+                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                ^=	            x ^= y    ist das selbe wie:        x = x ^ y           bitweise XOR führt eine bitweise XOR-Operation beider binären Zahlen durch und weist das Ergebnis der Variablen zu.
+                                        let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000110         // output of a: 6
+                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                |=	            x |= y    ist das selbe wie:        x = x | y           bitweise ODER führt eine bitweise ODER-Operation beider binären Zahlen durch und weist das Ergebnis der Variablen zu.
+                                        let a = 5; // 00000000000000000000000000000101      a &= 3; // 00000000000000000000000000000111         // output of a: 7
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+            Logical Assignment Operators (Logische Zuweisungsoperatoren)
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                &&=             x &&= y    ist das selbe wie:       x = x && (x = y)    ordnet y x zu, wenn x wahrheitsgemäß ist = wenn x vergeben ist output y ansonsten x
+                                       let person = {firstName:"Jane", lastName:"Doe"};         // output of person: firstName:"Jane", lastName:"Smith"
+                                       person.lastName &&= "Smith";                             // überschreibt lasName mit Smith
+                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                ||=             x ||= y    ist das selbe wie:       x = x || (x = y)    ordnet y x zu, wenn x fehlerhaft ist = wenn x vergeben ist output x ansonsten y
+                                       let title = "Titel";     title ||= "untitled";       // = title oder "untitled", da title vergeben, output nicht "untitled" sondern "Titel"
+                                       let title;               title ||= "untitled";       // = title oder "untitled", da title nicht vergeben, output "untitled"
+                -------------------------------------------------------------------------------------------------------------------------------------------------------------
+                ??=             x ??= y    ist das selbe wie:       x = x ?? (x = y)    ordnet y x zu, wenn x nicht vorhanden ist = fügt ein fehlenden Eigenschaft zu einem Objekt hinzu
+                                       let user = {firstName:"Jane", lastName:"Doe"};        // output of user: firstName:"Jane", lastName:"Smith", nickName:"jdoe"
+                                       user.nickName ??= "jdoe";                             // fügt nickName zu user hinzu
+        ---------------------------------------------------------
+        Comparison Operators (Vergleichs Operatoren):
+        ---------------------------------------------------------
+            ==	    equal to                                    ( Wert == 1 )                                           vergleicht ob Wert exakt 1 ist
+            ===	    equal value and equal type                  ( Wert === 1 )                                          vergleicht ob Wert und Datentyp exakt gleich ist
+            !=	    not equal                                   ( Wert != 1 )                                           vergleicht ob Wert nicht 1 ist
+            !==	    not equal value or not equal type           ( Wert !== 1 )                                          vergleicht ob Wert und Datentyp nicht gleich ist
+            >	    greater than                                ( Wert > 1 )                                            vergleicht ob Wert größer ist als 1
+            <	    less than                                   ( Wert < 1 )                                            vergleicht ob Wert kleiner ist als 1
+            >=	    greater than or equal to                    ( Wert >= 1 )                                           vergleicht ob Wert exakt 1 oder größer ist als 1
+            <=	    less than or equal to                       ( Wert <= 1 )                                           vergleicht ob Wert exakt 1 oder kleiner ist als 1
+            ?	    ternary operator                            ( Wert = (condition) ? value1:value2 )                  vergleicht ob Wert condition erfüllt, dann value1, sonst value2
+
+
+
+*/
