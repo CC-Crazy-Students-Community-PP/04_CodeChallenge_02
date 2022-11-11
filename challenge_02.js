@@ -88,13 +88,13 @@
     personDrink3 = null;
 
     switch ( true ) {
-        case ( personAge3 >= 0 && personAge3 <= 5 ):
+        case personAge3 < 6:
             personDrink3 = "nur Milch";
             break;
-        case ( personAge3 >= 6 && personAge3 <= 12 ):
+        case personAge3 < 13:
             personDrink3 = "Saft";
             break;
-        case ( personAge3 >= 13 && personAge3 <= 18 ):
+        case personAge3 < 19:
             personDrink3 = "schon Cola";
             break;
         default:
