@@ -8,7 +8,7 @@
     Wie zB: 
         let meinName = "Sandro", meinAlter = "geheim", meinZeug;
 ```
->Des weiteren gibt es hier eine liste von Operatoren die es in Javcascript gibt:
+> Des weiteren gibt es hier eine liste von Operatoren die es in Javcascript gibt:
 ```css
         ---------------------------------------------------------
         Arithmetic Operators (Arithmetische Operatoren):
