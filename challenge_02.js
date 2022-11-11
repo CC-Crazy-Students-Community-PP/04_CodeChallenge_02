@@ -188,3 +188,10 @@
     if ( !(personAge8 >= 0) && !(personAge8 > 18 ) ) { personDrink8 = "gar nichts"; }
 
     console.log( personName8 + ", Du darfst mit " + personAge8 + " " + personDrink8 + " trinken!" );
+
+/*
+    Hier als Beispiel wurde gezeigt, dass Variablen auch in einer Zeile,
+    in einer einzigen Deklaration deklariert werden können.
+    Wie zB: let meinName = "Sandro", meinAlter = "geheim", meinZeug;
+    Dabei muss auch hier nicht jede Variable gleich eine Wertzustellung bekommen.
+*/
