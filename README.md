@@ -1,6 +1,6 @@
 # CodeChallenge 02
 
-## Die Getränke-Challenge mit Beispielen
+## Die Getränke Challenge mit Beispielen
 
 * Geben über eine Prompt-Anforderung einen Namen ein
 * Geben über eine Prompt-Anforderung ein Alter ein
