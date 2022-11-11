@@ -147,9 +147,7 @@
 /***************************************************************/
     let personName6 = prompt( "bitte gib Deinen Namen ein: " );
     let personAge6 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
-
     let personDrink6;
-
 
     if ( personAge6 > 0, personAge6 < 6 ) {
         personDrink6 = "nur Milch";
