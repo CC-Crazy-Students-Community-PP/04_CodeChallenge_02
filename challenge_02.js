@@ -73,13 +73,19 @@
             break;
     }
 
+/*
+    Hier als Beispiel wurde gezeigt, dass Variablen auch Komma separiert
+    in Abfragen verwendet werden können.
+    DAS IST ABER NUR IN JAVASCRIPT SO.
+*/
+
 
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 3    *************/
 /***************************************************************/
-    let personName3 = prompt( "bitte gib Deinen Namen ein: " );
-    let personAge3 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
-    let personDrink3;
+    personName3 = prompt( "bitte gib Deinen Namen ein: " );
+    personAge3 = parseInt( prompt( "Bitt gib Dein Alter ein:" ) );
+    personDrink3 = null;
 
     switch ( true ) {
         case ( personAge3 >= 0 && personAge3 <= 5 ):
@@ -98,6 +104,11 @@
 
     console.log( personName3 + ", Du darfst mit " + personAge3 + " " + personDrink3 + " trinken!" );
 
+/*
+    Hier als Beispiel wurde gezeigt, dass Variablen auch ohne let oder var
+    deklariert werden können. Dann müssen aber auch Variablen ohne Startwert ausgenullt werden.
+    DAS IST ABER NUR IN JAVASCRIPT SO.
+*/
 
 /***************************************************************/
 /************   Getränke-Challenge | Beispiel 4    *************/
